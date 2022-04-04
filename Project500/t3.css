@@ -1,0 +1,5 @@
+.w4-bar .w4-bar-item{position:relative:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.w4-bar-block .w4-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w4-bar-block.w4-center .w4-bar-item{text-align:center}.w4-block{display:block;width:100%}
+.w4-hide-small{display:none!important}.w4-mobile{display:block;width:100%!important}.w4-bar-item.w4-mobile,.w4-dropdown-hover.w4-mobile,.w4-dropdown-click.w4-mobile{text-align:center}
+/*Lines 65  68   69  91   */

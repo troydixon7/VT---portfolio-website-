@@ -29,7 +29,7 @@
   #cf3 img.top {
   animation-name: cf3FadeInOut;
   animation-timing-function: ease-in-out;
-  animation-iteration-count:initial ;
+  animation-iteration-count:infinite ;
   animation-duration: 3s;
   animation-direction: normal;
   }
@@ -53,7 +53,7 @@
         }
 
   #cf3 {
-    position: relative;
+    position:static;
     height:900px;
     width:800px;
     margin:0 auto;

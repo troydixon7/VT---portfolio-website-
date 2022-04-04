@@ -15,7 +15,7 @@
     0% {
     opacity:1;
   }
-  45% {
+  5% {
   opacity:1;
   }
   55% {
@@ -28,19 +28,19 @@
   
   #cf3 img.top {
   animation-name: cf3FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count:inherit ;
-  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count:unset;
+  animation-duration: 1s;
   animation-direction: normal;
-  animation-iteration-count: 1;
+ 
   }
 
   #cf3 img.bottom {
     animation-name: cf3FadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count:inherit;
+    animation-delay: 1s;
+    animation-duration: 2s;
     animation-direction: normal;
     }
 

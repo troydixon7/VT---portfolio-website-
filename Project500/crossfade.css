@@ -1,3 +1,16 @@
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
 @keyframes cf3FadeInOut {
     0% {
     opacity:1;
@@ -16,8 +29,8 @@
   #cf3 img.top {
   animation-name: cf3FadeInOut;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
+  animation-iteration-count:initial ;
+  animation-duration: 3s;
   animation-direction: normal;
   }
 
@@ -30,7 +43,7 @@
     animation-direction: normal;
     }
 
-    #cf3 img.top2 {
+    #cf3 img.bottom2 {
         animation-name: cf3FadeInOut;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;

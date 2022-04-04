@@ -15,7 +15,7 @@
     0% {
     opacity:1;
   }
-  5% {
+  15% {
   opacity:1;
   }
   55% {
@@ -70,6 +70,64 @@
     transition: opacity 1s ease-in-out;
   }
 
-  
+  .fadein img {
+    position:absolute;
+    top:0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+/*Second Fading CSS Three elements Crossfade*/
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+    background-color: lightblue;
+    position:absolute;
+    left:0%;
+    width:100%;
+    height:650px;
+    width:1400px;
+    margin:0 auto;
+}
+#f2 {
+    -webkit-animation-delay: -4s;
+    position:absolute;
+    left:0%;
+    width:100%;
+    height:650px;
+    width:1400px;
+    margin:0 auto;
+}
+#f3 {
+    -webkit-animation-delay: -2s;
+    position:absolute;
+    left:0%;
+    width:100%;
+    height:650px;
+    width:1400px;
+    margin:0 auto;
+}
+
   
   

@@ -23,7 +23,7 @@
  * @version     SVN: $Id: shadowbox.js 61 2008-01-29 17:16:56Z mjijackson $
  */
 
- if(typeof Shadowbox == 'undefined'){
+if(typeof Shadowbox == 'undefined'){
     throw 'Unable to load Shadowbox, no base library adapter found.';
 }
 

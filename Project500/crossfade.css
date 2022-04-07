@@ -79,36 +79,13 @@
   }
   }
   
-  #cf3 img.top {
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-out;
-  animation-iteration-count:unset;
-  animation-duration: 1s;
-  animation-direction: normal;
  
-  }
 
-  #cf3 img.bottom {
-    animation-name: cf3FadeInOut;
-    animation-timing-function: ease-out;
-    animation-iteration-count:inherit;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    animation-direction: normal;
-    }
-
-    #cf3 img.bottom2 {
-        animation-name: cf3FadeInOut;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-delay: 6s;
-        animation-duration: 6s;
-        animation-direction: normal;
-        }
+  
 
   #cf3 {
     position:static;
-    height:650px;
+    height:450px;
     width:900px;
     margin:0 auto;
     animation-iteration-count: 1;
@@ -117,6 +94,8 @@
   #cf3 img {
     position:absolute;
     left:0%;
+    
+    margin-top: -3.5em;
     width:100%;
     -webkit-transition: opacity 1s ease-in;
     -moz-transition: opacity 1s ease-in;
@@ -141,17 +120,18 @@
 
 .container{
     width: 1200px;
-    height: 125px;
-    position:relative;
+    height: 100px;
+    position:static;
     margin: 0px;
+    
     
 }
 .box{
     width: 100%;
-    height: 227%;            
-    position:absolute;
-    top: 650px;
-    left: 0;
+    height: 50%;            
+    position:fixed;
+    top: 100px;
+    left: 0px;
     opacity: 0.8;
     
      /* for demo purpose  */
@@ -159,6 +139,18 @@
 .stack-top{
     z-index: 9;
     margin: 20px;
-
+}
+.parallax {
+    /* The image used */
+    background-image: url("https://dixonmm.info/wp-content/uploads/2022/04/Background-Teal-Boxes-2.png");
   
+    /* Set a specific height */
+    min-height: 100px;
+    
   
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

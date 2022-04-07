@@ -30,8 +30,14 @@
   }
 
   img[data-position] {
-    position: absolute;
-    border: 1px dotted red;
+    position: fixed;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 200px;
+    margin-top: 100px;
+    border: 10px dotted rgb(124, 207, 255);
   }
   img[data-position*=top]    { top: 0;    }
   img[data-position*=bottom] { bottom: 0; }

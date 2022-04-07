@@ -8,15 +8,15 @@
 
 /* Quick-zoom Container */
 .img-hover-zoom--quick-zoom img {
-    transform-origin: 150px, 0;
+    transform-origin: 50px, 0;
 
     transition: transform .5s, visibility .5s ease-in; 
   }
   
   /* The Transformation */
   .img-hover-zoom--quick-zoom:hover img {
-    transform: scale(.5);
-    -webkit-transform-origin-x: 1000px;
+    transform: scale(1.8);
+    -webkit-transform-origin-x: 250px;
   }
   /* Zoom-n-rotate Container */
 .img-hover-zoom--zoom-n-rotate img {

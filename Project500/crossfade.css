@@ -167,3 +167,17 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.parallax1{
+    /* The image used */
+    background-image: url("https://dixonmm.info/wp-content/uploads/2022/04/1200px-Circle_Logo.svg_.png");
+  
+    /* Set a specific height */
+    min-height: 100px;
+    
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;

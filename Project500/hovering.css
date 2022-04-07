@@ -20,11 +20,20 @@
   }
   /* Zoom-n-rotate Container */
 .img-hover-zoom--zoom-n-rotate img {
-    transition: transform 3.5s ease-in-out;
+    transition: transform 3.8s ease-in-out;
     transform-origin: 0px, 0;
   }
   
   /* The Transformation */
   .img-hover-zoom--zoom-n-rotate:hover img {
-    transform: scale(1.1) rotate(6980deg);
+    transform: scale(1.1) rotate(12980deg);
   }
+
+  img[data-position] {
+    position: absolute;
+    border: 1px dotted red;
+  }
+  img[data-position*=top]    { top: 0;    }
+  img[data-position*=bottom] { bottom: 0; }
+  img[data-position*=left]   { left: 0;   }
+  img[data-position*=right]  { right: 0;  }

@@ -1,0 +1,20 @@
+
+
+.img-hover-zoom {
+    height: 200px; /* Modify this according to your need */
+    overflow: hidden; /* Removing this will break the effects */
+  }
+
+
+/* Quick-zoom Container */
+.img-hover-zoom--quick-zoom img {
+    transform-origin: 150px, 0;
+
+    transition: transform .5s, visibility .5s ease-in; 
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--quick-zoom:hover img {
+    transform: scale(2.5);
+    -webkit-transform-origin-x: 1000px;
+  }

@@ -6,7 +6,6 @@ $( document ).ready(function() {
         $('.close').fadeIn(500);
       });
     });
-    
     $('.close, .overlay').click(function() {
       $('.overlay').fadeOut(500);
       $('.myVideo').attr("src", $(this).attr("vidUrl"));

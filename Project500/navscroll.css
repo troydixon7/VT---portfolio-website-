@@ -2,12 +2,10 @@
     width:940px;
     margin: 0 auto;
 }
-
 header {
     text-align:center;
     padding:70px 0;
 }
-
 nav {
     background: #000000;
     height: 60px;
@@ -15,18 +13,15 @@ nav {
     margin-left: -10px;
     line-height:50px;
 }
-
 #content {
     background: #fff;
     height: 1500px; /* presetting the height */
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
-
 .fixed {
     position:fixed;
     
 }
-
 /* Style The Dropdown Button */
 .dropbtn {
     background-color: #4CAF50;
@@ -36,14 +31,10 @@ nav {
     border: none;
     cursor: pointer;
   }
-  
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
-    position:fixed;
-   
-    
+    position:fixed; 
   }
-  
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
@@ -53,8 +44,7 @@ nav {
     min-width: 250px;
     box-shadow: 20px 8px 16px 20px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
+  } 
   /* Links inside the dropdown */
   .dropdown-content a {
     color: rgb(0, 114, 32);
@@ -62,16 +52,13 @@ nav {
     text-decoration: none;
     display: block;
   }
-  
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #000000}
-  
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
     margin-top: 0px;
   }
-  
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;

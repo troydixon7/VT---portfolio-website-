@@ -34,7 +34,6 @@
     left: 0;
     z-index: 998;
   }
-  
   /*_______________________________________________________________  Container  */
   #shadowbox_container {
     position: fixed;
@@ -47,7 +46,6 @@
     z-index: 999;
     text-align: center; /* centers in quirks */
   }
-  
   /*_______________________________________________________________  Shadowbox  */
   #shadowbox {
     visibility: hidden;
@@ -56,7 +54,6 @@
     font-family: 'Lucida Grande', Tahoma, sans-serif;
     text-align: left; /* reset left alignment */
   }
-  
   /*___________________________________________________________________  Title  */
   /*
   HTML snapshot:
@@ -127,7 +124,6 @@
   #shadowbox_loading span a:visited {
     color: #fff;
   }
-  
   /*_________________________________________________________________  Toolbar  */
   /*
   HTML snapshot:

@@ -130,6 +130,18 @@
   /*_________________________________________________________________  Toolbar  */
   /*
   HTML snapshot:
+
+<div id="shadowbox_body">
+    <div id="shadowbox_body_inner">
+      <img src="my_image.jpg" id="shadowbox_content" height="350" width="580">
+    </div>
+    <div id="shadowbox_loading">
+      <img src="images/loading.gif" alt="loading"></div>
+      <span><a href="javascript:Shadowbox.close();">Cancel</a></span>
+    </div>
+  </div>
+
+
   <div id="shadowbox_toolbar">
     <div id="shadowbox_toolbar_inner">
       <div id="shadowbox_nav_close">

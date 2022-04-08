@@ -186,7 +186,7 @@ if(typeof Shadowbox == 'undefined'){
         // these elements being present, so don't modify it unless you really
         // know what you're doing.
         skin:           {
-
+ 
             main:       '<div id="shadowbox_overlay"></div>' +
                         '<div id="shadowbox_container">' +
                             '<div id="shadowbox">' +

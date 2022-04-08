@@ -14,6 +14,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="crossfade.css">
+<link rel="stylesheet" href="newvidbox.css">
+<link rel="stylesheet" href="newvidbox.js">
+
+
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -59,7 +63,7 @@ body {font-family: "Lato", sans-serif}
       margin: 0;
   }
   .nav-container {
-      display: flex;
+      display:block;
       justify-content: space-between;
       align-items: center;
       background-color: rgb(30, 27, 27);
@@ -71,11 +75,15 @@ body {font-family: "Lato", sans-serif}
 
   }
   .nav-item-container {
-      display: flex;
+      
       justify-content: flex-start;
   }
   .container-right {
       justify-content: flex-end;
+      padding-left: 1200px;
+      margin-bottom: 200px;
+      
+      
   }
   .nav-item {
       margin: 0px 1em;
@@ -85,24 +93,47 @@ body {font-family: "Lato", sans-serif}
 </style>
 
 
-<!-- Navbar -->
+<!-- Navbar 
 <nav class="nav-container">
   <div class="nav-item-container">
- <a href="#" class="nav-item">HOME</a>
+ <a href="index.html" class="nav-item">HOME</a>
 <a href="#about" class="nav-item">About</a>
 <a href="#journey" class="nav-item">Journey</a>
 <a href="#contact" class="nav-item">CONTACT</a>
 </div>
 <div class="dropdown">
-  <button class="dropdown" title="More">MORE </button>     
+  <div class="nav-item-container container-right">
+  <button class="dropdown" title="More">MORE </button>   
 <div class="dropdown-content">
-  <a href="#" class="nav-item">Video Animations</a>
-  <a href="#" class="nav-item">Artwork</a>
-  <a href="#" class="nav-item">PaperBoard</a>
+ <div class="video-link" vidUrl="https://youtu.be/S8LpMFui-jM" class="nav-item">Video Animations</div>
+  <div class="video-link" vidUrl="https://youtu.be/S8LpMFui-jM" class="nav-item">Artwork</div>
+  <div class="video-link" vidUrl="https://youtu.be/S8LpMFui-jM" class="nav-item">PaperBoard</div>
+
 </div>
-</div>
-</div>
+</div>  
+</div> 
 </nav>
+-->
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+    <a href="#journey" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Journey</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#VideoA" class="w3-bar-item w3-button">Video Animations</a>
+       <a href="https://dixonmm.info/drawings/" class="w3-bar-item w3-button">Artwork</a>
+        <a href="https://dixonmm.info/dixon-portfolio/" class="w3-bar-item w3-button">PaperBoard</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 <!--Original<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" 
   href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
@@ -116,7 +147,7 @@ body {font-family: "Lato", sans-serif}
 
 
 
-<!-- Navbar on small screens --Original
+<!-- Navbar on small screens --Original(remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">about</a>
@@ -125,7 +156,6 @@ body {font-family: "Lato", sans-serif}
   <a href="#" class="w3-bar-item w4-button w4-padding-large" onclick="myFunction()">More</a>
 </div>
 
-(remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 
 
 
@@ -175,10 +205,6 @@ body {font-family: "Lato", sans-serif}
  (--</div>--)-->
 </div>
 
-
-
-
-
   <!-- Automatic Slideshow Images -->
 
   <!--  <div class="box" >
@@ -190,9 +216,6 @@ body {font-family: "Lato", sans-serif}
   
   <div class="w3-content" style="max-width:2000px;margin-top:46px">
     
-    
-
-
   
     <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center">
@@ -416,9 +439,32 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>  <!--ticket mod-->
 
+
+
+  <div class="parallax">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="videoA">
+     <h2 class="w3-wide w3-center">Video Animation</h2>
+      <p class="w3-opacity w3-center"><i>Check out the video</i></p>
+
+      <iframe width="800" height="400" src="https://www.youtube.com/embed/VTxI-ZxMTlw" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      
+    </div> 
+
+    
+
+    </div> <!--paralax-->
+
+
+
+
+
   <!-- The Contact Section -->
   
   <div class="parallax">
+    <br><br><br><br>
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <iframe width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" 
     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1246259080&color=%2300ff01&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -452,6 +498,7 @@ body {font-family: "Lato", sans-serif}
   </div> 
   </div> <!--paralax-->
 
+
 <!-- End Page Content -->
 <!-- Image of location/map <img src="/image.jpg" class="w3-image w3-greyscale-min" style="width:100%">-->
 <!-- Footer -->
@@ -462,7 +509,7 @@ body {font-family: "Lato", sans-serif}
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Footer Section <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p class="w3-medium">Footer Section <a href="https://www.dixonmm.info" target="_blank">Dixon Multimedia</a></p>
 </footer>
 
 <script>

@@ -1,12 +1,15 @@
-<!DOCTYPE html public "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd"> 
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
 <head>
 <title>Dixon Multimedia LLC.</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="t.css">
 <link rel="stylesheet" href="hovering.css">
+<link rel="stylesheet" href="navscroll.css">
+<link rel="stylesheet" href="nav.js">
 <!-- Muted <link rel="stylesheet" href="t3.css"> -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,7 +41,7 @@ body {font-family: "Lato", sans-serif}
 
 <style>
   a:link {
-    color: rgb(59, 149, 179);
+    color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
   }
@@ -50,54 +53,71 @@ body {font-family: "Lato", sans-serif}
   }
   </style>
 
-<style type="text/css">
-#bg {
-          position:fixed ; 
-          top: -50%; 
-          left: -50%; 
-          width: 200%; 
-          height: 200%;
-        }
-        #bg img {
-          position: absolute; 
-          top: 0; 
-          left: 0; 
-          right: 0; 
-          bottom: 0; 
-          margin: auto; 
-          min-width: 50%;
-          min-height: 50%;
-        }
-  
-   </style>  
+<style>
+  body {
+      padding: 0;
+      margin: 0;
+  }
+  .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(30, 27, 27);
+      height: 10vh;
+      width: 100%;
+      padding: 0px 1em;
+      position: fixed;
+      top: 0;
 
+  }
+  .nav-item-container {
+      display: flex;
+      justify-content: flex-start;
+  }
+  .container-right {
+      justify-content: flex-end;
+  }
+  .nav-item {
+      margin: 0px 1em;
+      text-decoration-color: #cccccc;
+      color:#cccccc
+  }
+</style>
+
+
+<!-- Navbar -->
+<nav class="nav-container">
+  <div class="nav-item-container">
+ <a href="#" class="nav-item">HOME</a>
+<a href="#about" class="nav-item">About</a>
+<a href="#journey" class="nav-item">Journey</a>
+<a href="#contact" class="nav-item">CONTACT</a>
+</div>
+<div class="dropdown">
+  <button class="dropdown" title="More">MORE </button>     
+<div class="dropdown-content">
+  <a href="#" class="nav-item">Video Animations</a>
+  <a href="#" class="nav-item">Artwork</a>
+  <a href="#" class="nav-item">PaperBoard</a>
+</div>
+</div>
+</div>
+</nav>
+
+<!--Original<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" 
+  href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+-->
 </head>
 
 
 
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
-    <a href="#journey" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Journey</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Video Animations</a>
-        <a href="#" class="w3-bar-item w3-button">Artwork</a>
-        <a href="#" class="w3-bar-item w3-button">PaperBoard</a>
-      </div>
-    </div>
 
-  </div>
-</div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+
+<!-- Navbar on small screens --Original
+
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">about</a>
   <a href="#journey" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">journey</a>
@@ -105,7 +125,7 @@ body {font-family: "Lato", sans-serif}
   <a href="#" class="w3-bar-item w4-button w4-padding-large" onclick="myFunction()">More</a>
 </div>
 
-
+(remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 
 
 
@@ -184,10 +204,8 @@ body {font-family: "Lato", sans-serif}
       <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
         <h3>Education</h3>
         <p><b>Transcript Information and Theories.</b></p>  
-        
         <br><br><br><br><br>
         <img src="https://dixonmm.info/wp-content/uploads/2022/01/Brochure1TD1-e1641251149867.png" style="width:100%">
-          
       </div>
         
     </div>
@@ -226,32 +244,15 @@ body {font-family: "Lato", sans-serif}
         <img src="https://dixonmm.info/wp-content/uploads/2022/04/ps_orig-460x295-1.jpg " style="width:100%">
       </div>
     </div>
-            </div>
-    </div>
-  
-    
-
-
-
-
-
-
-
-
-
-  
-
-
-
+   </div>
+   
 
   <!-- The about Section -->
 
   <!--  <textarea id="inActivites" name="inActivities" style="border:solid"></textarea>
     --(expandable box//// div id="divActivities" name="divActivities" style="border:thin")-->
     <div class="parallax">
-  <div class="w3-container w3-content w3-center w3-padding-64" style="margin-top:0px" style="max-width:800px" id="about" >
-    
-    
+  <div class="w3-container w3-content w3-center w3-padding-64" style="margin-top:0px" style="max-width:800px" id="about" >  
     <h2 class="w3-wide">About Dixon Multimedia</h2>
     <p class="w3-opacity"><i>About Paragraph</i></p>
     <p class="w3-justify">
@@ -296,16 +297,16 @@ body {font-family: "Lato", sans-serif}
  
     </div>
   </div>
-
-  
-</div>
-
+</div>   <!-- paralax-->
   <!-- The Journey Section -->
+
   <div class="w3-black" id="journey">
+    
+    <div class="parallax">
+   
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">Life Journey</h2>
       <p class="w3-opacity w3-center"><i>Life Journey Chapters</i></p><br>
-
 
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
@@ -333,14 +334,14 @@ body {font-family: "Lato", sans-serif}
             <p class="w3-opacity">Dec 15, 2007</p>
             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
             <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal3').style.display='block'">Document</button>
+          
           </div>
         </div>
       </div>
     </div>
+  </div>   <!--paralax-->
   </div>
 </body>
-
-
 
   <!-- Journey Modal -->
   <div id="ticketModal1" class="w3-modal">
@@ -362,14 +363,10 @@ body {font-family: "Lato", sans-serif}
   
 </div>
 
-
        <p class="w3-right">download <a href="#" class="w3-text-blue">pdf</a></p>
       </div>
     </div>
-  </div>
-
-
-
+  </div>  <!--ticket mod-->
 
   <div id="ticketModal2" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
@@ -390,16 +387,10 @@ body {font-family: "Lato", sans-serif}
   
 </div>
 
-
        <p class="w3-right">download <a href="#" class="w3-text-blue">pdf</a></p>
       </div>
     </div>
-  </div>
-
-
-
-
-
+  </div>   <!--ticket Mod-->
 
   <div id="ticketModal3" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
@@ -420,26 +411,22 @@ body {font-family: "Lato", sans-serif}
   
 </div>
 
-
        <p class="w3-right">download <a href="#" class="w3-text-blue">pdf</a></p>
       </div>
     </div>
-  </div>
-
-
-
-
-
-
-
-
+  </div>  <!--ticket mod-->
 
   <!-- The Contact Section -->
+  
   <div class="parallax">
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <iframe width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" 
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1246259080&color=%2300ff01&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    <div style="font-size: 10px; color: #000000;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+      <a href="https://soundcloud.com/troyd" title="The Underground Podcast" target="_blank" style="color: #cccccc; text-decoration: none;">The Underground Podcast</a> · 
+      <a href="https://soundcloud.com/troyd/udgpc-april-7-2022" title="UDGPC April 7, 2022" target="_blank" 
+      style="color: #000000; text-decoration: none;">UDGPC April 7, 2022</a></div>
    <h2 class="w3-wide w3-center">CONTACT</h2>
-   <img src="https://dixonmm.info/wp-content/uploads/2022/01/Board-Room-Testimonials-1.png"  style="width:100%">
-
     <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
@@ -463,9 +450,7 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
   </div> 
-  </div>
-
-
+  </div> <!--paralax-->
 
 <!-- End Page Content -->
 <!-- Image of location/map <img src="/image.jpg" class="w3-image w3-greyscale-min" style="width:100%">-->

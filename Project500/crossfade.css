@@ -98,10 +98,11 @@
   
 
   #cf3 {
-    position:static;
-    height:450px;
-    width:900px;
-    margin:0 auto;
+    position:relative;
+    padding-top: 0px;
+    height:550px;
+    width:1700px;
+    margin: auto;
     animation-iteration-count: 1;
   }
   
@@ -109,7 +110,7 @@
     position:absolute;
     left:0%;
     
-    margin-top: -3.5em;
+    margin-top: 30px;
     width:100%;
     -webkit-transition: opacity 1s ease-in;
     -moz-transition: opacity 1s ease-in;
@@ -129,15 +130,11 @@
     animation-duration: 6s;
 }
 
-
-
-
 .container{
     width: 900px;
     height: 100px;
     margin: 0px;
-    
-    
+
 }
 .box{
     width: 100%;
@@ -181,3 +178,18 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+}  
+
+    .parallax2{
+        /* The image used */
+        background-image: url("https://dixonmm.info/wp-content/uploads/2022/01/Minuteman-Logo-300x300-1.png");
+      
+        /* Set a specific height */
+        min-height: 100px;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
